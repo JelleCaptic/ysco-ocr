@@ -4,9 +4,6 @@ FROM nvcr.io/nvidia/l4t-ml:r35.2.1-py3
 WORKDIR /app
 
 RUN python3 -m pip install --upgrade pip setuptools wheel
-
-RUN python3 -m pip install keras-ocr
-
 RUN python3 -m pip install "opencv-python-headless<4.3" easyocr loguru
 RUN python3 -m pip install ultralytics --no-deps tqdm onnxruntime
 
